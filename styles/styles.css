@@ -1,0 +1,743 @@
+/*Typography*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap');
+
+@font-face {
+    font-family: 'ostrich-sans-bold';
+    src: url('../assets/ostrich-sans-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ostrich-sans-light';
+    src: url('../assets/ostrich-sans-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+h1 {
+    font-family: 'ostrich-sans-bold', sans-serif;
+    font-size: 3em;
+}
+
+/*Adjacent sibling combinator*/
+h1 + p {
+    font-family: 'ostrich-sans-light', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#about-link {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#coding {
+    font-family: 'Chivo Mono', monospace;
+    color: #f61f7a;
+}
+
+/*Child selector*/
+.about-me-section > h2,
+.skills > h2,
+.projects > h2 {
+    font-family: 'ostrich-sans-light', sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.skills > p,
+.projects > p,
+/*General sibling selector*/
+.about-me-section > h2 ~ p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+}
+
+.skills > ul {
+    font-family: 'Chivo Mono', monospace;
+    font-size: 1em;
+    line-height: 1em;
+    letter-spacing: 4px;
+}
+
+.resume-head,
+.build-a-car-head,
+.tic-tac-toe-head,
+.garage-head {
+    font-family: 'ostrich-sans-light', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+}
+
+.resume-p,
+.build-a-car-p,
+.tic-tac-toe-p,
+.garage-p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.resume-links,
+.build-a-car-links,
+.tic-tac-toe-links,
+.garage-links {
+    font-family: 'Chivo Mono', monospace;
+    line-height: 2.5em;
+    letter-spacing: 0.1em;
+    list-style: none;
+}
+
+.social-links {
+    font-family: 'Chivo Mono', monospace;
+    line-height: 1.2em;
+}
+
+footer {
+    font-family: 'ostrich-sans-light', sans-serif;
+    font-weight: bolder;
+    font-size: 0.7em;
+    letter-spacing: 0.4em;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+/*Defaults*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*Main*/
+main {
+    background-color: #fff5d3;
+}
+
+/*Layout*/
+header {
+    background-color: #fff599;
+}
+
+#header-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+/*Adjacent sibling combinator*/
+h1 + p {
+    text-align: center;
+    letter-spacing:0.2em;
+    line-height: 0.1em;
+}
+
+#about-link {
+    font-size: 1em;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0.3em;
+    border: 1px solid #ffec3e;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    background-color: #f7eb79;
+}
+
+#about-link:link,
+.links:link,
+.social-nav-links:link {
+    color: #ff94c1;
+}
+
+#about-link:visited,
+.links:visited,
+.social-nav-links:visited {
+    color: #fe599e;
+}
+
+#about-link:focus,
+.links:focus,
+.social-nav-links:focus {
+    color: #f61f7a;
+}
+
+#about-link:hover,
+.links:hover,
+.social-nav-links:hover {
+    color: #f61f7a;
+}
+
+#about-link:active,
+.links:active,
+.social-nav-links:active {
+    color: #ff217e;
+}
+
+main > section:nth-of-type(1) {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-section {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-section img {
+    margin-right: 0.94em;
+    padding: 1em;
+    float: right;
+}
+
+.about-me-section h2,
+.about-me-section p {
+    margin-left: 25%;
+    padding: 1em;
+    display: block;
+    margin: 2px 0 0 0;
+}
+
+.selfie {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.skills {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills > p {
+    text-align: center;
+}
+
+#html {
+    list-style-image: url(../images/html-resize-25.png);
+    align-items: center;
+}
+
+#css {
+    list-style-image: url(../images/css-icon.png);
+}
+
+#python {
+    list-style-image: url(../images/python-icon.png);
+}
+
+#java {
+    list-style-image: url(../images/java-icon.png);
+}
+
+#javascript {
+    list-style-image: url(../images/javascript-icon.png);
+}
+
+.project-list {
+    height: 100%;
+}
+
+.projects > h2,
+.projects > p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects .project-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2em;
+}
+
+.resume,
+.build-a-car,
+.tic-tac-toe,
+.garage {
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 5 5 5 5;
+}
+  
+.resume-image,
+.build-a-car-image,
+.tic-tac-toe-image,
+.garage-image {
+    width: 250px;
+    height: 250px;
+}
+  
+.resume-overlay,
+.build-a-car-overlay,
+.tic-tac-toe-overlay,
+.garage-overlay {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .2s;
+    background-color:rgb(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+  
+.resume:hover .resume-overlay {
+    opacity: 1;
+}
+
+.build-a-car:hover .build-a-car-overlay {
+    opacity: 1;
+}
+  
+.tic-tac-toe:hover .tic-tac-toe-overlay {
+    opacity: 1;
+}
+  
+.garage:hover .garage-overlay {
+    opacity: 1;
+}
+
+.links {
+    text-decoration: none;
+    border: 1px solid #f61f7a;
+    border-radius: 1.56em;
+    background-color: #ffe5fe;
+    padding: 0.5em;
+}
+
+.social-nav-links {
+    text-decoration: none;
+    border: 1px solid #f61f7a;
+    border-radius: 1.56em;
+    background-color: #ffe5fe;
+    padding: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+/*Descendant combinator*/
+.social-links nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+footer {
+    background-image: url(../images/footer-img.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Medium Devices, Desktops */
+@media screen and (min-width: 992px) {
+    /*Typography*/
+    h1 {
+        font-family: 'ostrich-sans-bold', sans-serif;
+        font-size: 5em;
+    }
+    
+    /*Adjacent sibling combinator*/
+    h1 + p {
+        font-family: 'ostrich-sans-light', sans-serif;
+        font-size: 3em;
+        font-weight: bold;
+    }
+    
+    #about-link {
+        font-family: 'Quicksand', sans-serif;
+    }
+    
+    /*Child selector*/
+    .about-me-section > h2 {
+        font-family: 'ostrich-sans-light';
+        font-size: 2.25em;
+        font-weight: bolder;
+        letter-spacing: 5px;
+    }
+    
+    /*General sibling selector*/
+    .about-me-section > h2 ~ p {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 0.88em;
+        line-height: 1.5em;
+    }
+    
+    #coding {
+        font-family: 'Chivo Mono', monospace;
+        color: #f61f7a;
+    }
+    
+    .skills > h2,
+    .projects > h2 {
+        font-family: 'ostrich-sans-light', sans-serif;
+        font-size: 2.25em;
+        font-weight: bolder;
+        letter-spacing: 5px;
+    }
+    
+    .skills > p,
+    .projects > p {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1em;
+    }
+    
+    .skills > ul {
+        font-family: 'Chivo Mono', monospace;
+        font-size: 1em;
+        line-height: 2em;
+        letter-spacing: 8px;
+    }
+    
+    .resume-head,
+    .build-a-car-head,
+    .tic-tac-toe-head,
+    .garage-head {
+        font-family: 'ostrich-sans-light', sans-serif;
+        font-weight: bolder;
+        letter-spacing: 0.2em;
+    }
+    
+    .resume-p,
+    .build-a-car-p,
+    .tic-tac-toe-p,
+    .garage-p {
+        font-family: 'Quicksand', sans-serif;
+    }
+    
+    .resume-links,
+    .build-a-car-links,
+    .tic-tac-toe-links,
+    .garage-links, {
+        font-family: 'Chivo Mono', monospace;
+        line-height: 3.2em;
+        letter-spacing: 0.2em;
+        list-style: none;
+    }
+    
+    .social-links {
+        font-family: 'Chivo Mono', monospace;
+        line-height: 3.2em;
+    }
+    
+    footer {
+        font-family: 'ostrich-sans-light', sans-serif;
+        font-weight: bolder;
+        font-size: 1em;
+        letter-spacing: 0.2em;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+    
+    /*Defaults*/
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    main {
+        background-color: #fff5d3;
+    }
+    
+    /*Layout*/
+    header {
+        background-color: #fff599;
+    }
+    
+    #header-content {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    /*Adjacent sibling combinator*/
+    h1 + p {
+        text-align: center;
+        letter-spacing:0.2em;
+        line-height: 0.1em;
+    }
+    
+    #about-link {
+        font-size: 1.5em;
+        text-decoration: none;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0.5em;
+        border: 1px solid #ffec3e;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        background-color: #f7eb79;
+    }
+    
+    #about-link:link,
+    .links:link,
+    .social-nav-links:link {
+        color: #ff94c1;
+    }
+    
+    #about-link:visited,
+    .links:visited,
+    .social-nav-links:visited {
+        color: #fe599e;
+    }
+    
+    #about-link:focus,
+    .links:focus,
+    .social-nav-links:focus {
+        color: #f61f7a;
+    }
+    
+    #about-link:hover,
+    .links:hover,
+    .social-nav-links:hover {
+        color: #f61f7a;
+    }
+    
+    #about-link:active,
+    .links:active,
+    .social-nav-links:active {
+        color: #ff217e;
+    }
+    
+    main > section:nth-of-type(1) {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-me-section {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-me-section img {
+        margin-right: 0.94em;
+        padding: 1em;
+        float: right;
+    }
+    
+    .about-me-section h2,
+    .about-me-section p {
+        margin-left: 25%;
+        padding: 1em;
+        display: block;
+        margin: 2px 0 0 0;
+    }
+    
+    .selfie {
+        height: 350px;
+        width: 350px;
+        border-radius: 50%;
+    }
+    
+    .skills {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .skills > p {
+        text-align: center;
+    }
+    
+    #html {
+        list-style-image: url(../images/html-resize-25.png);
+        align-items: center;
+    }
+    
+    #css {
+        list-style-image: url(../images/css-icon.png);
+    }
+    
+    #python {
+        list-style-image: url(../images/python-icon.png);
+    }
+    
+    #java {
+        list-style-image: url(../images/java-icon.png);
+    }
+    
+    #javascript {
+        list-style-image: url(../images/javascript-icon.png);
+    }
+    
+    .project-list {
+        height: 100vh;
+    }
+    
+    .projects > h2,
+    .projects > p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .projects .project-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2em;
+    }
+    
+    .resume,
+    .build-a-car,
+    .tic-tac-toe,
+    .garage {
+        position: relative;
+        margin: 0 auto;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 5 5 5 5;
+    }
+      
+    .resume-image,
+    .build-a-car-image,
+    .tic-tac-toe-image,
+    .garage-image {
+        width: 250px;
+        height: 250px;
+    }
+      
+    .resume-overlay,
+    .build-a-car-overlay,
+    .tic-tac-toe-overlay,
+    .garage-overlay {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        transition: .2s;
+        background-color:rgb(0, 0, 0, 0.8);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+      
+    .resume:hover .resume-overlay {
+        opacity: 1;
+    }
+    
+    .build-a-car:hover .build-a-car-overlay {
+        opacity: 1;
+    }
+      
+    .tic-tac-toe:hover .tic-tac-toe-overlay {
+        opacity: 1;
+    }
+      
+    .garage:hover .garage-overlay {
+        opacity: 1;
+    }
+    
+    .links {
+        text-decoration: none;
+        border: 1px solid #f61f7a;
+        border-radius: 1.56em;
+        background-color: #ffe5fe;
+        padding: 0.5em;
+    }
+    
+    
+    /*Nav*/
+    .social-nav-links {
+        text-decoration: none;
+        border: 1px solid #f61f7a;
+        border-radius: 1.56em;
+        background-color: #ffe5fe;
+        padding: 1em;
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    
+    /*Descendant combinator*/
+    .social-links nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+    
+    footer {
+        background-image: url(../images/footer-img.png);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+  
